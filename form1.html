@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="", method="get">
+        <fieldset>
+            <legend>Sign </legend>
+
+            <label for="Uname">Username:</label>
+            <input type="text" ,name="Username",id="Username", placeholder="Enter Username" , autofocus, autocomplete="on",
+            required  maxlength="10"><br><br>
+
+            <label for="pwd">Password:</label>
+            <input type="password", name="pwd", id="pwd", placeholder="Enter Password",  maxlength="7", required><br><br>
+            
+            
+            <p>Gender</p>
+            <input type="radio", name="Gender" value="Male", required>Male
+            <input type="radio", name="Gender" value="Female", required>Female
+
+            <p>Area of Interest</p>
+            <input type="checkbox", name="interest", value="DS" checked>DS
+            <input type="checkbox", name="interest", value="DBMS" checked>DBMS
+            <input type="checkbox", name="interest", value="CN" checked>CN
+            <input type="checkbox", name="interest", value="Fullstack" checked>Fullstack<br><br>
+        
+            <label>Department:</label>
+            <select name="Department" id="Department">
+                <option value="select" selected disabled>Select Department</option>
+                <optgroup label="Computer">
+                    <option value="CSE">CSE</option>
+                    <option value="CS_IT">CS_IT</option>
+                    <option value="CE">CE</option>
+                    <option value="IT">IT</option>
+                </optgroup>
+                <optgroup label="OTHER">
+                    <option value="MECH">MECH</option>
+                    <option value="CIVIl">CIVIL</option>
+                    <option value="EC">EC</option>
+                </optgroup>
+            </select><br><br>
+
+            
+            <label>address</label>
+          
+             <textarea id="msg"  name="msg" rows="5"  cols="6" placeholder="Enter Your Message"></textarea><br><br>
+
+
+            <label>Upload Your CV</label>
+            <input type="file" name="cv" id="cv" accept=".pdf,.doc" multiple><br><br>
+            <label>Date of Birth:</label>
+            <input type="date" name="dob", id="dob", min="2025-09-07" , max="2026-12-31"><br><br>
+            <label>Email:</label>
+            <input type="email" name="email", id="email"><br><br>
+        
+            
+            <input type="submit" value="Submit Form">
+            <input type="reset", value="reset">
+            <button type="submit">click me</button>
+
+        </fieldset>
+
+    </form>
+</body>
+</html>
