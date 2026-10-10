@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+    <style >
+        .box1{
+            width: 300px;height: 150px;margin: 30px auto; padding: 20px; border: 4px solid red; 
+            box-sizing:content-box ;
+            background-color: aquamarine;
+            text-align: center;
+
+        }
+        .box2{
+            width: 300px;height: 150px;margin: 30px auto; padding: 20px; border: 4px solid yellow; 
+            box-sizing:border-box ;
+            background-color: rgb(32, 23, 114);
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>this is demonstrate</h1>
+    <div class="box1">
+        Box-1 box-sizing:content-box<br>
+        width and height include only content
+
+    </div>
+    <div class="box2">
+        Box-2 box-sizing:border-box<br>
+        width and height include padding +content+border
+
+    </div>
+</body>
+</html>
