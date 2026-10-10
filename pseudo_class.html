@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link{
+            color: brown;
+            padding: 20px;
+        }
+        a:visited{
+            color:green
+            
+        }
+        a:hover{
+            color:yellow;
+            font-size: 30px;
+            background-color: blue;
+            padding: 20px;
+        }
+        button:hover{
+            color:yellow;
+            font-size: 30px;
+            background-color: blue;
+            padding: 20px;
+        }
+        a:active{
+            color:black
+        }
+        input:focus{
+            background-color: rgb(238, 223, 14);
+            border:5px dashed green;
+            padding: 20px;
+        }
+        ul li:nth-child(2){
+            color:"pink";
+            font-size:30px;
+        }
+        ul li:not(.special){
+            color: greenyellow;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="padding: 20px;">style a link depending on state ot position</h2>
+    <p><b><a href="https://www.youtube.com" target="_blank">this is link</a></b></p>
+    <button>submit</button><br>
+    First name:<input type="text" required  placeholder="click to focus">
+    <ul>
+       <li>list1</li> 
+        <li>list2</li>
+        <li class="special">list3</li>
+    </ul>
+</body>
+</html>

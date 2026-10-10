@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::first-line{
+            color:red;
+            background-color: aquamarine;
+            padding:20px;
+        }
+        p::first-letter{
+            font-size: 30px;
+            
+        }
+        p::before{
+            content:"Note";
+            color:green;
+        }
+        p::after{
+            content:""
+        }
+        ul li::marker{
+            color: red;
+            font-size: 50px;
+        }
+        ::selection{
+            background-color:yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <p style="padding-left:20px">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt, cupiditate
+         temporibus eaque molestiae numquam minima repellendus ipsa ullam quae laboriosam 
+          laudantium sapiente. Voluptatibus, iure?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae amet quaerat enim,
+         corporis nobis praesentium perspiciatis, fugit ratione aut 
+         id excepturi aspernatur ea quo porro.
+    </p>
+    <ul style="padding-left:200px">
+        <li>item1</li>
+        <li>item2</li>
+        <li>itrm3</li>
+    </ul>
+</body>
+</html>
