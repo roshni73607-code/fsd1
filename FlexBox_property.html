@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display:flex;
+            flex-direction:row;
+            /* row/column-reversed/row-reversed */ 
+            justify-content: space-between;
+            /*  (only for horizantal )flex-start/flex-end/space-around/space-evenly */
+            align-items: center;
+            /* stretch/flex-start/flex-end */
+            flex-wrap: wrap;
+            /* wrap/nowrap */
+            gap:50px ;
+            background-color: blueviolet;
+            padding:10px;
+           
+        }
+        .item{
+            background-color: red;
+            color: antiquewhite;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+            width: 200px;
+            height: 200px;
+    
+
+        }
+        .item:nth-child(3){
+            order:2
+            /* for right order=1
+                for left order=-1
+             */
+        }
+
+    </style>
+</head>
+<body>
+   <div class="container">
+        <div class="item"> Item 1</div>    
+        <div class="item"> Item 2 Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Minima reiciendis accusamus in adipisci sunt repellat saepe officiis inventore beatae obcaecati!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ut tempora distinctio
+         corrupti optio atque quibusdam aliquam nemo quisquam quaerat! para is dead!</div>    
+        <div class="item"> Item 3</div>    
+        <div class="item"> Item 4</div>
+        <div class="item"> Item 5</div> 
+        <div class="item"> Item 6</div>   
+</div> 
+</body>
+</html>
