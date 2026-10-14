@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            background-color: aquamarine;
+            border: 2px solid ;
+            padding: 10px;
+            margin: 5px;
+            text-align: center;
+        }
+        .inline div{
+            display: inline;
+            background-color: blueviolet;
+            border: 1px solid orangered;
+            padding: 10px;
+            
+        }
+        .block span{
+            display: block;
+            background-color: rgb(82, 63, 170);
+            padding: 10px;
+            border: 2px solid ;
+            margin-bottom: 5px;
+            height: 30%;
+            width: 30%;
+
+        }
+        .inline-block div{
+            background-color: blue;
+            padding:10px;
+            margin:20px;
+            border:2px dashed;
+            width:120px;
+            height: 60px;
+            }
+        .none  p{display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Display Property</h1>
+    <h2>Display Inline</h2>
+
+    <div class="inline box">
+        <div>Inline 1</div> <div>Inline 2</div> <div>Inline 3</div>
+    </div>
+
+    <div class="block box">
+        <span>Block 1</span> <span>Block-2</span> <span>Block 3</span>
+        <h2>Display block</h2>
+    </div>
+
+    <div class="inline-block"><div>Box 1</div> <div >Box 2</div> <div>Box 3</div> 
+    <h2>Display inline-block</h2>
+    </div>
+
+    <h2>Display None</h2>
+    <div class="none box">   <p>This text is not display</p></div>
+    <p> this is display</p>
+</body>
+</html>
