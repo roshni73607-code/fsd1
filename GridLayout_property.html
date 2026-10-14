@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\ , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-fr{
+            display: grid;
+            grid-template-columns:repeat(6,1fr);
+            grid-template-rows: 1fr 2fr;
+            gap: 10px;
+            background-color: blue;
+            padding: 10px;
+            margin-bottom:40px;
+
+        }
+        .item{
+            background-color: rgb(202, 202, 224);
+            padding: 20px;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-fr">
+        <div class="item">200px(fixed)</div>
+        <div class="item">1fx(flexible)</div>
+        <div class="item">2fr(twise as wide)</div>
+        <div class="item">2fr(twise as wide)</div>
+        <!-- <div class="item">200px(fixed)</div> -->
+
+    </div>
+</body>
+</html>
