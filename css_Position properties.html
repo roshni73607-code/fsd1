@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            margin-top:50px;
+            height: 800px;
+            border: 2px solid;
+            position:relative;
+
+        }
+        .container1{
+            margin:top 30px;
+            height: 1000px;
+            border: 2px solid;
+            
+        }
+        .test{
+            margin-left:20px;
+            height: 200px;
+            width:200px;
+            text-align: center;
+            background-color: crimson;
+        }
+        #test1{
+            background-color: chartreuse;
+            position:static;
+        }
+        #test2{
+            background-color: cornflowerblue;
+            position:relative;
+            top: 50px;
+            left:40px;
+            z-index:1;
+        }
+        #test3{
+            background-color: rgb(129, 17, 96);
+            position:absolute;
+            top: 50px;
+            right:0px;
+            z-index:1;
+        }
+        #test4{
+            background-color: rgb(220, 240, 40);
+            position:fixed;
+            top: 50px;
+            left:40px;
+          
+        }
+        #test5{
+            background-color: rgb(212, 39, 155);
+            position:sticky;
+            top: 50px;
+            right:40px;
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="test"   id="test1">static</div>
+    <div class="test"  id="test2">relative</div>
+     <div class="test"  id="test3">absolute</div>
+      <div class="test"  id="test4">fixed</div>
+        <div class="test"  id="test5">sticky</div>
+    </div>
+    <div class="container1">
+
+    </div>
+</body>
+</html>
