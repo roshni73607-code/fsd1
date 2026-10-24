@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+
+        #grade1{
+            height:400px;
+            width:400px;
+            background-color: red;
+            background-image: linear-gradient(yellow 20%,red 20%,blue 10%,pink 50%); 
+            /* background-image: linear-gradient(to top left,yellow 20%,blue 30%,green 30%,pink 20%,black 10%); */
+            /* background-image: linear-gradient(45deg,yellow ,blue ,green ,pink ,black ); */
+        }
+
+        #grade2{
+            
+            height:400px;
+            width:400px;
+            border-top-left-radius:50%;
+            border-top-right-radius: 50%; 
+            background-image: radial-gradient(circle,violet ,indigo ,blue ,green ,yellow,orange,red );
+        
+
+        }
+        #grade3{
+            
+            height:400px;
+            width:400px;
+            border-top-left-radius:50%;
+            border-top-right-radius: 50%;
+            border-bottom-right-radius: 50%;
+            border-bottom-left-radius:50% ;
+            background-image: conic-gradient(from 90deg,violet ,indigo ,blue ,green ,yellow,orange,red 
+            ,white 270deg);
+        
+        
+        
+
+        }
+        #practice{
+             height:400px;
+            width:400px;
+            border-top-left-radius:50%;
+            border-top-right-radius: 50%;
+            border-bottom-right-radius: 50%;
+            border-bottom-left-radius:50% ;
+            transition-duration: 10s;
+            background-image: conic-gradient(yellow 0deg,yellow 45deg,green 45deg,green 90deg,yellow 90deg,
+            yellow 135deg,green 135deg,green 180deg,yellow 180deg,yellow 225deg,green 225deg,green 270deg,
+            yellow 270deg, yellow 315deg, green 315deg,green 360deg)
+          }
+          #practice:hover{
+            transform:rotate(100000deg) 
+          }
+     </style>
+</head>
+<body>
+    <div id="grade1"> Gradient</div>
+    <div id="grade2">Grade2</div>
+     <div id="grade3">Grade3</div>
+     <div id="practice"></div>
+</body>
+</html>
